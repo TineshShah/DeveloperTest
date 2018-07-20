@@ -32,8 +32,8 @@
 		<tr>
 			<td>Zweite ganze Zahl </td>
 			<td>
-				<asp:TextBox runat="server" ID="_op2" />
-				<asp:RegularExpressionValidator ID="_val2" ControlToValidate="_op1" runat="server" ErrorMessage="Bitte nur ganze Zahlen" ValidationExpression="[\d\D]+" />
+				<asp:TextBox runat="server" ID="_op2" /> <%-- control to validate updated and Validation Expression fixed--%>
+				<asp:RegularExpressionValidator ID="_val2" ControlToValidate="_op2" runat="server" ErrorMessage="Bitte nur ganze Zahlen" ValidationExpression="\d+" />
 			</td>
 		</tr>
 		<tr>

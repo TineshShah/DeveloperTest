@@ -121,7 +121,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="RemotingClient.config" />
+    <Content Include="RemotingClient.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -254,6 +256,10 @@
     <ProjectReference Include="..\DevTestCommon\DevTestCommon.csproj">
       <Project>{f398b549-8fb8-4ef5-9a15-111c1bc625f3}</Project>
       <Name>DevTestCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevTestCon\DevTestCon.csproj">
+      <Project>{3E13576D-C3D9-4C83-9F9A-275A605B06B5}</Project>
+      <Name>DevTestCon</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

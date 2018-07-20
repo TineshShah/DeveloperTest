@@ -34,8 +34,8 @@
 						<td>
 							<asp:ListBox runat="server" ID="_currencyList" Rows="1">
 								<asp:ListItem Text="USD" Value="USD" />
-								<asp:ListItem Text="CHF" Value="EUR" />
-								<asp:ListItem Text="EUR" Value="EUR" />
+								<asp:ListItem Text="CHF" Value="CHF" /> 
+								<asp:ListItem Text="EUR" Value="EUR" /> <%--Value Corrected--%>
 								<asp:ListItem Text="YEN" Value="YEN" />
 							</asp:ListBox></td>
 					</tr>
@@ -73,6 +73,11 @@
 	</table>
 
 	<script type="text/javascript">
-		function MyAwesomeMethod(){return !confirm('Sicher, dass das abgesendet werden soll?');}
+        function MyAwesomeMethod() { 
+            return confirm('Sicher, dass das abgesendet werden soll?'); //removed the negation
+
+       
+        }
+
 </script>
 </asp:Content>
