@@ -13,6 +13,15 @@ namespace Wescale.DevTestWeb.UI {
     public partial class Remoting {
         
         /// <summary>
+        /// Panel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+        
+        /// <summary>
         /// _sendPing control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace Wescale.DevTestWeb.UI {
         protected global::System.Web.UI.WebControls.Label _pingReturn;
         
         /// <summary>
+        /// Panel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel2;
+        
+        /// <summary>
         /// _op1 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +56,15 @@ namespace Wescale.DevTestWeb.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox _op1;
+        
+        /// <summary>
+        /// _valRequired1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator _valRequired1;
         
         /// <summary>
         /// _val1 control.
@@ -56,6 +83,15 @@ namespace Wescale.DevTestWeb.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox _op2;
+        
+        /// <summary>
+        /// _valRequired2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator _valRequired2;
         
         /// <summary>
         /// _val2 control.

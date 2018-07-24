@@ -7,11 +7,16 @@ namespace Wescale.DevTestWeb.UI {
             //_currencyList.SelectedValue = "EUR"; //On pageload default value is removed
         }
 
-        protected void _sendInput_Command(object sender, CommandEventArgs e) {
-            _selectedName.Text = _nameText.Text;
-            _selectedQty.Text = _qtyText.Text;
-            _selectedPrice.Text = _priceTxt.Text;
-            _selectedCurrency.Text = _currencyList.SelectedValue;
+        protected void _sendInput_Command(object sender, CommandEventArgs e)
+        {
+            if (Page.IsValid)//check for page validity
+            {
+                _selectedName.Text = _nameText.Text;
+                _selectedQty.Text = _qtyText.Text;
+                _selectedPrice.Text = _priceTxt.Text;
+                _selectedCurrency.Text = _currencyList.SelectedValue;
+            }
+            
         }
     
     }
