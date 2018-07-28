@@ -35,7 +35,7 @@
                             <%--validators added--%>
                             <asp:TextBox runat="server" ID="_priceTxt"></asp:TextBox>
                             <asp:RequiredFieldValidator runat="server" ID="RequiredFieldValidator2" ErrorMessage="Bitte einen price angeben." ControlToValidate="_priceTxt" ForeColor="Red" />
-                            <asp:RegularExpressionValidator ID="_val2" ControlToValidate="_priceTxt" runat="server" ErrorMessage="Bitte nur ganze Zahlen" ValidationExpression="\d+" ForeColor="Red" />
+                            <asp:RegularExpressionValidator ID="_val2" ControlToValidate="_priceTxt" runat="server" ErrorMessage="Bitte korrigieren Sie den Preis" ValidationExpression="\d+\.{0,1}\d*" ForeColor="Red" />
                         </td>
                     </tr>
                     <tr>
