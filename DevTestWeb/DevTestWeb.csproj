@@ -261,6 +261,10 @@
       <Project>{3E13576D-C3D9-4C83-9F9A-275A605B06B5}</Project>
       <Name>DevTestCon</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DevTestData\DevTestData.csproj">
+      <Project>{E1F40B06-E8D8-4A60-9C98-F93F4C295FAB}</Project>
+      <Name>DevTestData</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -43,21 +43,19 @@ namespace Wescale.DevTestData {
             session.Flush();
         }
 
+
         /// <summary>
-		/// Retrieve <see cref="User"/> page wise.
-		/// </summary>
+        /// Retrieve <see cref="User"/> page wise.
+        /// </summary>
         /// <param name="pageIndex">Index of page</param>
         /// <param name="pageSize">Size of page</param>
         /// <param name="totalRecords">Total count of users.</param>
-		public IList<User> List(int pageIndex, int pageSize, out int totalRecords) {
-            totalRecords = 42;
-
+        public IList<User> List(int pageIndex, int pageSize, out int totalRecords) {     
             ISession session = SessionFactory.OpenSession();
-
             ICriteria criteria = session.CreateCriteria<User>();
+            totalRecords = criteria.List().Count; //Total records corrected
             criteria.SetFirstResult(pageIndex);
             criteria.SetMaxResults(pageSize);
-
             return criteria.List<User>();
         }
 

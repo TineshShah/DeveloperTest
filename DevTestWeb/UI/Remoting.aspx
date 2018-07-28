@@ -44,8 +44,13 @@
             </td>   
         </tr>
 		<tr>
-			<td colspan="2">
-				<asp:Button runat="server" Text="Addieren" ID="_add" OnCommand="_add_Command" /></td>
+			<td colspan="2"><%-- adding all missing operations--%>
+				<asp:Button runat="server" Text="Addieren" ID="_add" OnCommand="_add_Command" />
+                <asp:Button runat="server" Text="substract" ID="_sub" OnCommand="_sub_Command" />
+                <asp:Button runat="server" Text="Multiply" ID="_mul" OnCommand="_mul_Command" />
+                <asp:Button runat="server" Text="Mod" ID="_mod" OnCommand="_mod_Command" />
+
+			</td>
 		</tr>
 		<tr>
 			<td colspan="2">

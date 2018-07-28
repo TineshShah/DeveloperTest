@@ -54,15 +54,10 @@ namespace Wescale.DevTestCon {
         /// <param name="a">Erste Zahl</param>
         /// <param name="b">Zweite Zahl</param>
         /// <returns>Ergebnis</returns>
-        public int Mod(int a, int b) {
+        public int Mod(int a, int b) {//corrected Modulo
             // Wie funktioniert Modulo? 
             // Keine Ahnung, TDD-Ansatz, der Product-Owner hat den ModSimpleTest geschrieben.
-            if (a == 1 || a / 2 * 2 == a) {
-                return 0;
-            } else if (b == 2) {
-                return 1;
-            }
-            return 2;
+            return a % b;
         }
 
     }

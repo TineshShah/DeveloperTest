@@ -21,7 +21,7 @@ namespace Wescale.DevTestWeb.UI {
             // Load the data
             int totalRecords;
             _userGrid.DataSource = CreateDataSource(out totalRecords);
-            _userGrid.VirtualItemCount = totalRecords/_userGrid.PageSize; //Corrected the virtual Item count
+            _userGrid.VirtualItemCount = totalRecords; 
             _userGrid.DataBind();
         }
 
@@ -50,8 +50,7 @@ namespace Wescale.DevTestWeb.UI {
         /// </summary>
         private ICollection CreateDataSource(out int totalRecords) {
             IUserService service = (IUserService)RemotingHelper.GetObject(typeof(IUserService));
-            IList<User> users = service.List(startIndex, _userGrid.PageSize, out totalRecords); //gather list from startindex 
-            
+            IList<User> users= service.List(startIndex, _userGrid.PageSize, out totalRecords); //gather list from startindex
             DataTable dt = new DataTable();
             dt.Columns.Add(new DataColumn("ID", typeof(int)));
             dt.Columns.Add(new DataColumn("Login", typeof(string)));
